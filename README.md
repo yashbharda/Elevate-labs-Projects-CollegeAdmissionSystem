@@ -6,7 +6,7 @@ A simple Spring Boot project with CRUD operations for books and authors.
 [Swagger UI](http://localhost:8080/swagger-ui/index.html)
 
 ## 📦 Postman Collection
-[Download Postman Collection](postman/bookstore-api.postman_collection.json)
+[Download Postman Collection](https://github.com/yashbharda/Elevate-labs-Projects/blob/main/BookStore/Postman/BookStore%20API.json)
 
 ## 🚀 How to Run
 1. Clone this repo
