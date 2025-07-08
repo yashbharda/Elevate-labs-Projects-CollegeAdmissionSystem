@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "43c6ff43-8de6-43a6-874c-ee4792d82019",
+		"name": "Bookstore Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44556098",
+		"_collection_link": "https://yash-239928.postman.co/workspace/Yash's-Workspace~dda80a37-0b01-40a8-89f5-8515d4487e16/collection/44556098-43c6ff43-8de6-43a6-874c-ee4792d82019?action=share&source=collection_link&creator=44556098"
+	},
+	"item": [
+		{
+			"name": "Create Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"George Orwell\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/authors"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Authors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"George Orwell\"\r\n}"
+				},
+				"url": "localhost:8080/authors"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authors By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kiran Desai\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/authors/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Author By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Amrita Pritam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/authors/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Author By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/authors/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"C++ Programming\",\r\n  \"price\": 499.99,\r\n  \"author\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get List of Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"C++ Programming\",\r\n  \"price\": 499.99,\r\n  \"author\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books/17"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"C++ Programming\",\r\n  \"price\": 499.99,\r\n  \"author\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books/17"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Programming Principal\",\r\n  \"price\": 499.99,\r\n  \"author\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/books/1"
+			},
+			"response": []
+		}
+	]
+}
